@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #0A3871;
+}
+header{
+    background-color: aliceblue;
+    padding: 35px;
+    min-height: 3em;
+    background-image: url('./Vector.png');
+    background-position-x: 20px;
+    background-position-y: 20px ;
+    background-repeat: no-repeat;
+    color: black;
+}
+header span{
+    margin-left:40px;
+    font-size: 2rem;
+    color: linear-gradient(45deg, black, red);
+}
+
+    
+
+.main-content{
+    min-height: 100%;
+    padding: 1rem;
+    background:linear-gradient(aliceblue,#0A3871);;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.input-text .clausulas {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 0.5em;
+    padding: 0 0 0.4em 0;
+    color: aliceblue;
+}
+
+.input-text textarea{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    resize: none;
+    width: 100%;
+    min-height: 19em;
+}
+.input-text .buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 4em;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+.input-text .buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.input-text .buttons button:hover{
+    background-color: white;
+    color: #0A3871;
+    transition-duration: 2s;
+    box-shadow: 0px 2px 17px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 17px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 17px 7px rgba(0,0,0,0.75);
+}
+.encripted-text{
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#0A3871, aliceblue);
+    width: 20%;
+    overflow: hidden;
+}
+.encripted-text .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 6em;
+}
+.encripted-text .texto p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.encripted-text .texto span{
+    font-size: 17px;
+    margin-top: 4em;
+}
+
+.encripted-text .copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4em;
+    background-color: #0A3871;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 2s;
+}
+.encripted-text .copy:hover{
+    color: #0A3871;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 2px 17px 7px #0A3871;
+    -webkit-box-shadow: 0px 2px 17px 7px #0A3871;
+    -moz-box-shadow: 0px 2px 17px 7px #0A3871;
+}
+
+.encripted-text #encript-area{
+    min-height: 15em;
+    width: 100%;
+    resize: none;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+.encripted-text .hidden{
+    display:none;
+}
+
+footer{
+    display: flex;
+    min-height: 5em;
+    background-color: #0A3871;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .input-text{
+        width: 100%;
+    }
+    .input-text textarea{
+        min-height: 15em;
+    }
+    /* .input-text .buttons{
+        gap: 1em;
+    } */
+    .encripted-text img{
+        display: none;
+    }
+    .encripted-text{
+        background: none;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .input-text .buttons button {
+        width: 100%;
+    }
+    .input-text .buttons{
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

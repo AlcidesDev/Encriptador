@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador marca Akme</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Encriptador online</span>
+        </div>
+    </header>
+<main class="main-content">
+    <section class="input-text">
+        <textarea name="" id="textArea"  placeholder="Ingrese el texto aquí"></textarea>
+        <div class="clausulas">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon-fill" viewBox="0 0 16 16">
+                <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <span> Solo letras minúsculas y sin acentos</span>
+        </div>
+        
+        <div class="buttons">
+        <button  id="encript-button">Encriptar</button>
+        <button  id="desencript-button">Desencriptar</button>
+        </div>
+        
+    </section>
+
+    <section class="encripted-text">
+        <div  class="img-container">
+            <img id="img" src="./Muñeco.png" alt="muñeco-img">
+            <textarea name="encript-area" id="encript-area" class="hidden"></textarea>
+        </div>
+        <div id="texto-img" class="texto">
+            <p>Ningún mensaje fue encontrado</p>
+            <span>Ingresa el texto que deseas encriptar o desencriptar</span>
+        </div>
+        
+        <button id="copy-button" class="copy hidden">
+            Copiar mensaje
+        </button>
+    </section>
+
+</main>
+<footer>
+        <p>&copy Aguedo Alcides</p>
+        <p>&copy Alura LATAM</p>
+        <p>&copy Oracle One</p>
+</footer>
+<script src="./script.js"></script>    
+</body>
+</html>
