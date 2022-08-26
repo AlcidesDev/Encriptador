@@ -36,7 +36,8 @@ desEncript.onclick = () => {
 };
 copyButton.onclick = () => {
     encriptArea.select();
-    document.execCommand('copy');
+    // document.execCommand('copy');
+    navigator.clipboard.write(encriptArea.value);
     encriptArea.value = '';
     alert('Mensaje copiado al portapapeles')
     textArea.focus();
