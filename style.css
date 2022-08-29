@@ -2,26 +2,19 @@
     padding: 0;
     margin: 0;
 }
-body {
-    background-color: #0A3871;
-}
+
 header{
     background-color: aliceblue;
-    padding: 35px;
-    min-height: 3em;
-    background-image: url('./Vector.png');
-    background-position-x: 20px;
-    background-position-y: 20px ;
-    background-repeat: no-repeat;
+    padding: 23.5px;
+    min-height: 5em;
     color: black;
 }
 header span{
-    margin-left:40px;
-    font-size: 2rem;
+    font-size: 2em;
     color: linear-gradient(45deg, black, red);
+    padding: 4px;
+    /* margin: 20px 0 0 60px; */
 }
-
-    
 
 .main-content{
     min-height: 100%;
@@ -29,6 +22,7 @@ header span{
     background:linear-gradient(aliceblue,#0A3871);;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .input-text{
@@ -143,16 +137,24 @@ header span{
     display:none;
 }
 
-footer div{
-    display: flex;
+footer{
     min-height: 5em;
     background-color: #0A3871;
-    justify-content: space-around;
-    align-items: center;
+    color: aliceblue;
+}
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
     color: aliceblue;
 }
 
 @media screen and (max-width: 768px) {
+    
     .main-content{
     flex-direction: column;
     justify-content: center;
@@ -162,11 +164,9 @@ footer div{
         width: 100%;
     }
     .input-text textarea{
+        width: 100%;
         min-height: 15em;
     }
-    /* .input-text .buttons{
-        gap: 1em;
-    } */
     .encripted-text img{
         display: none;
     }
@@ -190,10 +190,13 @@ footer div{
         flex-direction: column;
         justify-content: space-around;
     }
-    footer div{
-        flex-direction: column;
+    footer div {
+        display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.5em;
     }
+    footer ul{
+        display: block;
+        gap: 0.5em;
+    } 
 }
