@@ -35,7 +35,7 @@ header span{
     align-items: center;
     justify-content:flex-start;
     gap: 0.5em;
-    padding: 0 0 0.4em 0;
+    padding: 0 0 0.5em 0;
     color: aliceblue;
 }
 
@@ -136,16 +136,21 @@ header span{
 .encripted-text .hidden{
     display:none;
 }
-
 footer{
-    min-height: 5em;
-    background-color: #0A3871;
+    background: linear-gradient(#0A3871, black);
+}
+
+footer .lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4.9em;
     color: aliceblue;
 }
 footer ul {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
     list-style: none;
 }
 footer li a{
@@ -190,8 +195,9 @@ footer li a{
         flex-direction: column;
         justify-content: space-around;
     }
-    footer div {
+    footer {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
